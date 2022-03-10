@@ -12,68 +12,77 @@
       <link rel="stylesheet" href="theme.css">
    </head>
    <style>
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+html, body {
+  height: 100%;
+}
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 150%;
+  line-height: 1.4;
+}
 body {
   margin: 0;
-  padding: 0;
-    background-image: url('Diversity.png');
+}
+
+.viewport-header {
+  position: relative;
   height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#login .container #login-row #login-column #login-box {
-  margin-top: 120px;
-  max-width: 600px;
-  height: 320px;
-  border: 1px solid #9C9C9C;
+
+
+h1 {
+  font-family: 'Syncopate', sans-serif;
+  color: #4a3a27;
+  text-transform: uppercase;
+  letter-spacing: 3vw;
+  line-height: 1.2;
+  font-size: 3vw;
+  text-align: center;
+  span {
+    display: block;
+    font-size: 10vw;
+    letter-spacing: -1.3vw;
+  }
 }
-#login .container #login-row #login-column #login-box #login-form {
-  padding: 20px;
-}
-#login .container #login-row #login-column #login-box #login-form #register-link {
-  margin-top: -85px;
+
+main {
+  width: 80vw;
+  left: 10%;
+  height: 100vh;
+  overflow: auto;
+  background: rgba(black, 0.66);
+  color: white;
+  position: relative;
+  padding: 1rem;
 }
    </style>
    <body>
-      <nav class="navbar navbar-expand-sm purple">
+      <nav class="navbar navbar-expand-sm purple" style="z-index: 1;">
          <div class="container-fluid text-white justify-content-center">
             <b>Nobis</b>
          </div>
       </nav>
-      <div class="container-fluid">
-         <div class="d-flex justify-content-center m-3">
-            <img src="rainbow1.png" width="auto" height="180">
-         </div>
-         <div class="d-flex justify-content-center">
-            <h1>Welcome</h1>
-         </div>
-         <div class="d-flex justify-content-center text-center rainbow">
-            <h4>The world is one family</h4>
-         </div>
+<video src="vid.mp4" autoplay loop playsinline muted></video>
 
+<header class="viewport-header">
+</header>
 
+      <main>Diversity isn’t always a given, even at a truly global university. So we work diligently every day to ensure that our campus remains a place of inclusion, one in which every student, faculty and staff member is welcomed whole-heartedly and without reservation into the Northwestern family.<br>Our 8,000+ undergraduates come from all 50 states and more than 75 countries around the world.
 
-
-<!-- Modal -->
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel2">Login</h5>
-      </div>
-      <div class="modal-body">
-          <div class="form-group">
-    <label for="email">Email address:</label>
-    <input type="email" class="form-control" placeholder="Enter email" id="email">
-  </div>
-  <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" placeholder="Enter password" id="pwd">
-  </div>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-primary" href="index.html">Submit</i></a>
-      </div>
-    </div>
-  </div>
-
-      </div>
+But diversity isn’t just about numbers. At Northwestern, we believe that diversity—of background, identity, belief, interest, expertise—is essential to undergraduate learning and to a healthy society. We also believe in convening a community of open-minded individuals who are eager to benefit from and contribute to the world of perspectives represented on campus.</main>
       <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark purple px-2">
          <a class="navbar-brand" href="index.html"><i class="material-icons cyan-text text-darken-4">home</i></a>
          <a class="navbar-brand" href="events.html"><i class="material-icons cyan-text text-darken-4">event_available</i></a>
@@ -82,8 +91,4 @@ body {
          <a class="navbar-brand" href="contact.html"><i class="material-icons cyan-text text-darken-4">call</i></a>
       </nav>
    </body>
-</html>
-
-
-
-
+</html></html>
